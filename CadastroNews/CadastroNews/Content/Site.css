@@ -1,49 +1,130 @@
 body
 {
     font-size: .85em;
-    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    font-family: "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
 }
 
-header,
-footer,
-nav,
-section {
+header, footer, nav, section
+{
     display: block;
+}
+
+footer
+{
+    font: normal 15px "Segoe UI";
+    width: 99,9%;
+    background-color: steelblue;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 30px 5px 0;
+}
+section
+{
+    min-height: 400px;
+    width: 99,9%;
+}
+a
+{
+    text-decoration: none;
+    padding-right: 5px;
+    color: steelblue;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+h1
+{
+    font: bold 30px "Segoe UI";
+    width: 99,9%;
+    background-color: steelblue;
+    color: #FFF;
+    text-align: right;
+    padding: 5px 30px 5px 0;
+}
+ul
+{
+    width: 99,5%;
+    text-align: right;
+}
+ul li
+{
+    display: inline;
+    font: bold 20px "Segoe UI";
+}
+ul li a, .voltar
+{
+    color: steelblue;
+    text-decoration: none;
+    padding: 3px 15px;
+}
+ul li a:hover, .voltar:hover
+{
+    background-color: steelblue;
+    color: #fff;
+}
+h2
+{
+    font: bold 25px "Segoe UI";
+    width: 99,9%;
+    color: #555;
+}
+
+/* Tabela */
+table
+{
+    border: solid 1px steelblue;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+table td
+{
+    padding: 5px;
+    border: solid 1px steelblue;
+}
+
+table th
+{
+    padding: 6px 5px;
+    text-align: left;
+    background-color: steelblue;
+    border: solid 1px steelblue;
+    color: #fff;
 }
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
 
-fieldset 
+fieldset
 {
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
 }
 
-legend 
+legend
 {
-    font-size:1.2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-textarea 
+textarea
 {
     min-height: 75px;
 }
 
-.editor-label 
+.editor-label
 {
     margin: 1em 0 0 0;
 }
 
-.editor-field 
+.editor-field
 {
-    margin:0.5em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
-
 
 /* Styles for validation helpers
 -----------------------------------------------------------*/

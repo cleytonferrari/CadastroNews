@@ -1,0 +1,28 @@
+﻿@model CadastroNews.Models.Noticia
+@{
+    ViewBag.Title = "Details";
+}
+<h2>
+    Detalhes</h2>
+<fieldset>
+    <legend>Noticia</legend>
+    <div class="display-label">
+        Titulo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+    <div class="display-label">
+        Conteudo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Conteudo)
+    </div>
+    <div class="display-label">
+        Fonte</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fonte.Nome) / @Html.DisplayFor(model => model.Fonte.Contato)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.NoticiaId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

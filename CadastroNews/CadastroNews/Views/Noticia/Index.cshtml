@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CadastroNews.Models.Noticia>
+@{
+    ViewBag.Title = "Cadastro de Notícias";
+}
+<h2>
+    Index</h2>
+<p>
+    <a href="@Url.Action("Create", "Noticia")" class="voltar">Cadatrar nova Notícias</a>
+</p>
+<table>
+    <tr>
+        <th>
+            Titulo
+        </th>
+        <th>
+            Fonte
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fonte.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.NoticiaId }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.NoticiaId }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.NoticiaId })
+            </td>
+        </tr>
+    }
+</table>

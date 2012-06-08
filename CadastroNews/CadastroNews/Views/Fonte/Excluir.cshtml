@@ -1,0 +1,30 @@
+﻿@model CadastroNews.Models.Fonte
+@{
+    ViewBag.Title = "Excluir Fonte";
+}
+<h2>
+    Excluir</h2>
+<h3>
+    Deseja mesmo excluir?</h3>
+<fieldset>
+    <legend>Fonte</legend>
+    <div>
+        @Html.LabelFor(model => model.Nome)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Contato)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Contato)
+    </div>
+</fieldset>
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Excluir" />
+        <a href="@Url.Action("Index", "Fonte")" class="voltar">Voltar</a>
+    </p>
+}

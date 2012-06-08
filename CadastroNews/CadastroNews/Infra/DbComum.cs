@@ -12,5 +12,7 @@ namespace CadastroNews.Infra
         }
 
         public DbSet<Fonte> Fontes { get; set; }
+
+        public DbSet<Noticia> Noticias { get; set; }
     }
 }
