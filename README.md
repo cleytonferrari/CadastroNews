@@ -1,6 +1,6 @@
 # Cadastro News #
 
-Projeto utilizado nas aulas de Linguagem de Programação II.
+Projeto utilizado nas aulas de Linguagem de Programaï¿½ï¿½o II.
 Este projeto visa demonstrar o uso do Entity Framework, com o Asp.Net MVC 3.
 
-	Muito das idéias aqui são criadas de forma didáticas, sempre há maneiras melhores e piores de fazer a mesma coisa.
+	Muito das idï¿½ias aqui sï¿½o criadas de forma didï¿½ticas, sempre hï¿½ maneiras melhores e piores de fazer a mesma coisa....
